@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
+import styles from "./Navbar.module.css";
 function Navbar(){
     return (
-        <header>
+        <header className={styles.header}>
             <h1>OnTrack</h1>
-            <ul>
+            <ul className={styles.navigation}>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/exercises">Exercises</Link></li>
                 <li><Link to="/workout-planner">Workout-Planner</Link></li>
@@ -15,4 +15,4 @@ function Navbar(){
     )
 }
 
-export default Navbar
+export default Navbar;

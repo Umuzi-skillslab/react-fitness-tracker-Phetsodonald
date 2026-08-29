@@ -1,0 +1,23 @@
+.container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.container span{
+    background-color: white;
+    height: 3px;
+    width: 30px;
+}
+
+@media (width <= 768px) {
+    .container{
+        display: flex;
+    }
+}

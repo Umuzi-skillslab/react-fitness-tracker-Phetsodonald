@@ -21,7 +21,6 @@ function App(){
         <Route path="/history" element={<HistoryPage/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
-      <Footer/>
     </BrowserRouter>
   )
 }

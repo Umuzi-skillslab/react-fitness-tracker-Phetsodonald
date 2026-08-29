@@ -1,13 +1,21 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
+
+function activeRoute(route){
+    const location = useLocation();
+    return location.pathname === route ? `${styles.active}` : "" ;
+}
+
 function Navbar(){
+   
+
     return (
         <ul className={styles.navigation}>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/exercises">Exercises</Link></li>
-            <li><Link to="/workout-planner">Workout-Planner</Link></li>
-            <li><Link to="/progress">Progress</Link></li>
-            <li><Link to="/history">History</Link></li>
+            <li><Link to="/" className={ activeRoute("/")}>Home</Link></li>
+            <li><Link to="/exercises" className={ activeRoute("/exercises") }>Exercises</Link></li>
+            <li><Link to="/workout-planner" className={ activeRoute("/workout-planner") }>Workout-Planner</Link></li>
+            <li><Link to="/progress" className={ activeRoute("/progress") }>Progress</Link></li>
+            <li><Link to="/history" className={ activeRoute("/history") }>History</Link></li>
         </ul>
     )
 }

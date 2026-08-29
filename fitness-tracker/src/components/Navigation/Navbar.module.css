@@ -22,5 +22,5 @@
 .navigation a:hover{
     color: var(--accent-color);
     text-shadow: 10px 10px 10px #514d4d;
-    font-weight: bold;
+    font-weight: 700;
 }

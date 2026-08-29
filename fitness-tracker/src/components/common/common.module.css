@@ -1,0 +1,17 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #567a56;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10000;
+}
+
+header h1{
+    color: #f5f5f5;
+    font-family: cursive;
+}

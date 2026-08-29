@@ -1,5 +1,6 @@
 import { Routes, Route, BrowserRouter } from "react-router-dom";
-import Navbar from "./components/Navigation/Navbar";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
 import Home from "./pages/Home";
 import ExercisesPage from "./pages/ExercisesPage";
 import WorkoutPlannerPage from "./pages/WorkoutPlannerPage";
@@ -11,7 +12,7 @@ import NotFound from "./pages/NotFound";
 function App(){
   return (
     <BrowserRouter>
-      <Navbar/>
+      <Header/>
       <Routes>
         <Route path="/" element={<Home/>} />
         <Route path="/exercises" element={<ExercisesPage/>} />
@@ -20,6 +21,7 @@ function App(){
         <Route path="/history" element={<HistoryPage/>} />
         <Route path="*" element={<NotFound/>} />
       </Routes>
+      <Footer/>
     </BrowserRouter>
   )
 }

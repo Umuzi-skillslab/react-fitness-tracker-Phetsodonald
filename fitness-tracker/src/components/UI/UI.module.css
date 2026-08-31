@@ -30,3 +30,9 @@
     opacity: 0.5;
     cursor: not-allowed;
 }
+
+.card{
+    background:#fff;
+    padding:20px;
+    box-shadow:0 4px 18px #00000012
+}

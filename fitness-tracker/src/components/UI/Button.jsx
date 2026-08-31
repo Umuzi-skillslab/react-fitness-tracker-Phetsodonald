@@ -9,7 +9,7 @@ const Button = ({children, variant="primary", type="button", onClick, disabled=f
     )
 }
 
-Button.prototypes = {
+Button.PropTypes = {
     children: PropTypes.node.isRequired,
     variant: PropTypes.oneOf(["primary", "secondary", "danger"]),
     type: PropTypes.oneOf(["button", "submit", "reset"]),

@@ -5,15 +5,11 @@
     justify-content: center;
     color: white;
     font-weight: bolder;
+    font-size: large;
+    padding: 10px;
     row-gap: 5px;
     cursor: pointer;
     z-index: 2000;
-}
-
-.container span{
-    background-color: white;
-    height: 3px;
-    width: 30px;
 }
 
 @media (width <= 768px) {

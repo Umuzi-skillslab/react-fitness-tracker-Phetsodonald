@@ -1,5 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import styles from "./Navbar.module.css";
+import PropTypes from "prop-types";
 
 function Navbar({ isOpen }) {
     const location = useLocation();
@@ -68,6 +69,10 @@ function Navbar({ isOpen }) {
             </li>
         </ul>
     );
+}
+
+Navbar.prototype = {
+    isOpen: PropTypes.bool
 }
 
 export default Navbar;

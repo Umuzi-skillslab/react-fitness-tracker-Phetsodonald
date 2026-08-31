@@ -32,7 +32,27 @@
 }
 
 .card{
-    background:#fff;
-    padding:20px;
-    box-shadow:0 4px 18px #00000012
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 18px #00000012
+}
+
+.modalContainer{
+    position: fixed;
+    inset: 0;
+    background:  #0008;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    z-index: 20
+}
+
+.modal{
+    background: #fff;
+    max-width: 650px;
+    width: 100%;
+    max-height: 85vh;
+    overflow: auto;
+    padding: 24px;
+    border-radius: 14px
 }

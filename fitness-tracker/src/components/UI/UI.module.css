@@ -65,3 +65,38 @@
     background:#e8f7f2;
     margin:2px
 }
+
+.filters{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;margin-bottom:18px
+}
+
+.filters select{
+    padding:10px;
+    border:1px solid #d1d5db;
+    border-radius:8px
+}
+
+.search{
+    display:flex;
+    gap:8px;
+    margin-bottom:16px
+}
+
+.search input{
+    flex:1;
+    padding:11px;
+    border:1px solid #d1d5db;
+    border-radius:8px
+}
+
+
+@media(max-width:768px){
+    .filters{
+        grid-template-columns: 1fr;
+    }
+    .search{
+        flex-direction: column;
+    }
+}

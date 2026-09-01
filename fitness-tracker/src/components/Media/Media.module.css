@@ -1,0 +1,14 @@
+.media{
+    display:grid;
+    gap:10px
+}
+
+.media video,.media audio{
+    width:100%;border-radius:10px
+}
+
+.media{
+    background:#f8fafc;
+    padding:14px;
+    border-radius:12px
+}

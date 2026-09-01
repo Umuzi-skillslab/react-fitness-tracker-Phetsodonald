@@ -1,6 +1,5 @@
 import { render, screen } from "@testing-library/react";
 import VideoPlayer from "./VideoPlayer";
-import { describe } from "vitest";
 
 describe("VideoPlayer", () => {
     test('should render video title',()=>{

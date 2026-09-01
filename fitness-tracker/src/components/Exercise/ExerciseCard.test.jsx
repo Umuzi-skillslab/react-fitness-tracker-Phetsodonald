@@ -21,5 +21,6 @@ describe('ExerciseCard',()=>{
     
     test('shows in plan state',()=>{
         render(<ExerciseCard exercise={exercise} onSelect={jest.fn()} isInPlan/>);
-        expect(screen.getByRole('button',{name:'In Plan'})).toBeDisabled()})}
-    );
+        expect(screen.getByRole('button',{name:'In Plan'})).toBeDisabled()}
+    )}
+);

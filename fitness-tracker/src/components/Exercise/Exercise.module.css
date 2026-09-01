@@ -1,0 +1,48 @@
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px
+}
+
+.exerciseCard{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+    transition:.2s
+}
+
+.exerciseCard:hover{
+    transform:translateY(-4px)
+}
+
+.actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+}
+
+.detail{
+    display:grid;
+    gap:16px
+}
+
+.detail ul{
+    padding-left:20px
+}
+
+.meta{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap
+}
+
+@media(max-width:1024px){
+    .grid{
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+@media(max-width:650px){
+    .grid{
+        grid-template-columns:1fr
+    }
+}

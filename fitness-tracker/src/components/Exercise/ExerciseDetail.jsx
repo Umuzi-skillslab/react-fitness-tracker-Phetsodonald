@@ -5,7 +5,7 @@ import Badge from "../UI/Badge";
 import VideoPlayer from "../Media/VideoPlayer";
 import styles from "./Exercise.module.css";
 
-const ExerciseDetails = ({exercise, onBack, onAdd}) => {
+const ExerciseDetail = ({exercise, onBack, onAdd}) => {
     return (
         <Card>
             <article className={styles.detail}>
@@ -30,10 +30,10 @@ const ExerciseDetails = ({exercise, onBack, onAdd}) => {
     )
 }
 
-ExerciseDetails.PropTypes = {
+ExerciseDetail.PropTypes = {
     exercise: PropTypes.object.isRequired,
     onBack: PropTypes.func.isRequired,
     onAdd: PropTypes.func.isRequired
 }
 
-export default ExerciseDetails;
+export default ExerciseDetail;

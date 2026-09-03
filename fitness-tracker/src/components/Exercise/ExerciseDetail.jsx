@@ -22,7 +22,7 @@ const ExerciseDetail = ({exercise, onBack, onAdd}) => {
                 </p>
                 <p><strong>Equipment:</strong>{exercise.equipment}</p>
                 <h3>instruction</h3>
-                <ol>{exercise.intruction.map((step, index) => <li key={index}>{step}</li>)}</ol>
+                <ol>{exercise.instructions.map((step, index) => <li key={index}>{step}</li>)}</ol>
                 {exercise.videoUrl?<VideoPlayer videoUrl={exercise.videoUrl} title={`${exercise.name} demonstration`} description="Follow the movement at a comfortable pace."/>:null}
                 <Button onClick={()=>onAdd(exercise)}>Add to Workout</Button>
             </article>

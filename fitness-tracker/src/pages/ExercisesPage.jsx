@@ -4,7 +4,7 @@ import Header from "../components/common/Header";
 import SearchBar from "../components/UI/SearchBar";
 import ExerciseFilter from "../components/Exercise/ExerciseFilter";
 import ExerciseList from "../components/Exercise/ExerciseList";
-import {exercisesData} from "../data/exerciseData";
+import { exercisesData } from "../data/exercisesData";
 
 const ExercisesPage = ({workoutPlan, onAdd}) => {
     const [exercises, setExercises] = useState([]);

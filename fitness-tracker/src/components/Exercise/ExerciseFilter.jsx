@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import styles from ",/Exercise.module.css";
+import styles from "./Exercise.module.css";
 
 const ExerciseFilter = ({category, muscleGroup, difficulity, onCategoryChange, onMuscleChange, onDifficulityChange}) => {
     return (
@@ -17,7 +17,7 @@ const ExerciseFilter = ({category, muscleGroup, difficulity, onCategoryChange, o
                 <option key={m} value={m}>{m}</option>)}
                 
             </select>
-            <select value={difficulty} onChange={onDifficultyChange}>
+            <select value={difficulity} onChange={onDifficulityChange}>
                 <option value="all">All Levels</option>
                 <option value="beginner">Beginner</option>
                 <option value="intermediate">Intermediate</option>

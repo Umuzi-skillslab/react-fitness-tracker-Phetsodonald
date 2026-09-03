@@ -33,7 +33,7 @@ const SearchBar = ({onSearch, onClear, searchTerm="", placeholder="Search exerci
         <form className={styles.search} onSubmit={submit}>
             <input value={term} onChange={change}  onFocus={onFocus} onBlur={onBlur} placeholder={placeholder} />
             <Button type="submit">Search</Button>
-            <Button type="button" variant="secondary" onClick={clear()}>Clear</Button>
+            <Button type="button" variant="secondary" onClick={clear}>Clear</Button>
         </form>
     );
 }

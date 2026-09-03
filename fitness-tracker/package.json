@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "coverage": "jest --coverage"
   },
   "dependencies": {
     "prop-types": "^15.8.1",

@@ -1,0 +1,23 @@
+.form{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin-bottom:20px
+}
+
+.form input{
+    padding:10px;
+    border:1px solid #ddd;
+    border-radius:8px
+}
+
+.logs{
+    display:grid;
+    gap:10px
+}
+
+@media(max-width:700px){
+    .form{
+        grid-template-columns:1fr
+    }
+}

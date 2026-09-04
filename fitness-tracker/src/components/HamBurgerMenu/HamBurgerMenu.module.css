@@ -1,0 +1,19 @@
+.container{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    padding: 10px;
+    row-gap: 5px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+@media (width <= 768px) {
+    .container{
+        display: flex;
+    }
+}

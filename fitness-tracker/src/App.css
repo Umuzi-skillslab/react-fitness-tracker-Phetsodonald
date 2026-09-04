@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing:border-box
+}
+
+body{
+    margin:0;
+    font-family: "Poppins", sans-serif;
+    background:#f3f4f6;
+    color:#111827
+}
+
+.container{
+    width:min(1180px,92%);
+    margin:0 auto;
+    padding:35px 0;
+    min-height:75vh
+}
+
+h1{
+    font-size:clamp(2rem,4vw,3rem);
+    margin:0 0 8px
+}
+
+h2,h3,h4{
+    margin-top:0
+}
+
+button,input,select{
+    font:inherit
+}
+
+.heroGrid,.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:16px;
+    margin-bottom:24px
+}
+
+.stats{
+    grid-template-columns:repeat(4,1fr)
+}
+
+.stats strong{
+    font-size:2rem
+}
+
+@media(max-width:900px){
+    .heroGrid,.stats{
+        grid-template-columns:repeat(2,1fr)
+    }
+}
+
+@media(max-width:600px){
+    .heroGrid,.stats{
+        grid-template-columns:1fr
+    }
+}

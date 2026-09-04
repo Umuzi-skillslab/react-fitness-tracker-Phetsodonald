@@ -9,11 +9,10 @@ function Header({ title, subtitle }) {
 
     return (
         <header className={styles.header}>
-            <h1>OnTrack</h1>
-
-            {title && <h2>{title}</h2>}
-            {subtitle && <p>{subtitle}</p>}
-
+            <div className={styles.logo}>
+                {title && <h2>{title}</h2>}
+                {subtitle && <p>{subtitle}</p>}
+            </div>
             <Navbar isOpen={isOpen} />
             <HamBurgerMenu
                 isOpen={isOpen}

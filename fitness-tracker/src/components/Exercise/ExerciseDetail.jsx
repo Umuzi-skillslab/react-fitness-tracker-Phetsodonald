@@ -9,7 +9,7 @@ const ExerciseDetail = ({exercise, onBack, onAdd}) => {
     return (
         <Card>
             <article className={styles.detail}>
-                <Button variant="secondary" onClick={onBack}>Back to Exercise</Button>
+                <Button variant="secondary" onClick={onBack}>Back to Exercises</Button>
                 <h1>{exercise.name}</h1>
                 <div className={styles.meta}>
                     {exercise.muscleGroups.map(muscleGroup => <Badge key={muscleGroup}>{muscleGroup}</Badge>)}

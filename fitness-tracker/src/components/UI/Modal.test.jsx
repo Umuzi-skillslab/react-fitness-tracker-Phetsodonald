@@ -1,6 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
 import Modal from "./Modal";
-import { describe, expect, test } from "vitest";
 
 describe("Modal", () => {
     test("should render content and closes.", () => {

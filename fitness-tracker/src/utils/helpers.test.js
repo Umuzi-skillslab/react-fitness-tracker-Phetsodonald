@@ -1,4 +1,3 @@
-import { describe } from 'vitest';
 import {formatDuration, calculateTotalCalories, calculateTotalWeight, getStreak} from './helpers';
 
 describe("formatDuration", () => {

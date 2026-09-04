@@ -22,7 +22,7 @@ const ExerciseCard = ({ exercise, onSelect, onAdd, isInPlan = false }) => {
                     <Badge>{exercise.category}</Badge>
 
                     <Badge tone={hovered ? "default" : "muted"}>
-                        {exercise.difficulity}
+                        {exercise.difficulty}
                     </Badge>
 
                     <p>{exercise.muscleGroups.join(", ")}</p>
@@ -57,7 +57,7 @@ ExerciseCard.propTypes = {
         name: PropTypes.string.isRequired,
         category: PropTypes.string.isRequired,
         muscleGroups: PropTypes.arrayOf(PropTypes.string).isRequired,
-        difficulity: PropTypes.string.isRequired,
+        difficulty: PropTypes.string.isRequired,
         duration: PropTypes.number.isRequired,
         sets: PropTypes.number.isRequired,
         reps: PropTypes.number.isRequired,
